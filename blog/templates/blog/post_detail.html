@@ -2,12 +2,12 @@
 
 {% block content %}
     <div class="post">
-        {% if post.published_date %}
+        {% if post.yayinlanma_tarihi %}
             <div class="date">
-                {{ post.published_date }}
+                {{ post.yayinlanma_tarihi }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <h1>{{ post.baslik }}</h1>
+        <p>{{ post.yazi|linebreaks }}</p>
     </div>
 {% endblock %}
